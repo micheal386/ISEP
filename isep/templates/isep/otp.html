@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>One-Time-Pad</title>
+</head>
+<body> 
+Now given the text message needed to be encrypted:
+{{ Mes_str }}
+<br>
+Now given the key:
+{{ Key_str }}
+<br>
+Please input the encrypted message:
+<form method='post'>
+{% csrf_token %}
+{{ form }}
+<input type="submit" value="SUBMIT">
+</form>
+<br>
+</body>
+</html>

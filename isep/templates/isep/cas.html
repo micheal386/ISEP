@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Caesar Encryption</title>
+    </head>
+    <body> 
+        Welcome to Caesar
+        <form action="http://127.0.0.1:8000/CAS/Result" method='post'>
+            {% csrf_token %}
+            {{ form  }}
+            <input type="submit" value="SUBMIT">
+        </form>
+        <br>
+    </body>
+</html>
